@@ -1,0 +1,116 @@
+.breadcrumb {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.breadcrumb h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.breadcrumb p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.breadcrumb a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Page Heading */
+.page-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead th {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+table tbody td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table tbody td:nth-child(1) {
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.214);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.214);
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody td {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    table tbody td:nth-child(2) {
+        margin-bottom: 10px;
+        font-weight: normal;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumb h1 {
+        font-size: 1.25rem;
+    }
+
+    .breadcrumb p {
+        font-size: 0.8rem;
+    }
+    .btn {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* For screens smaller than 480px (Phones) */
+@media (max-width: 480px) {
+    .breadcrumb h1 {
+        font-size: 1.1rem;
+    }
+
+    .breadcrumb p {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}

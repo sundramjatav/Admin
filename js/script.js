@@ -10,7 +10,7 @@ function loadContent(url, elementId) {
 window.onload = function () {
   loadContent("components/header.html", "header");
   loadContent("components/sidemenu.html", "sideMenu");
-  loadContent("components/pages/dashboard.html", "main-content"); // Default content
+  loadContent("components/pages/dashboard.html", "main-content");
 };
 
 function onSidebarLinkClick(pageUrl, element) {

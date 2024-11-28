@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pending Withdrawals</title>
+    <link rel="stylesheet" href="../../css/approvedwithdrawal.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="breadcrumb">
+            <h1>Cancelled Withdrwals</h1>
+            <p><a href="#">home</a> / <a href="#">Cancelled Withdrwals</a></p>
+        </div>
+        <h2 class="page-heading">CANCELLED WITHDRAWALS</h2>
+        <hr>
+        <!-- Filters Section -->
+        <section class="filters">
+            <input type="text" placeholder="Enter Username">
+            <input type="text" placeholder="Enter Full Name">
+            <select>
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+            </select>
+            <button class="filter-btn">Filter</button>
+            <button class="reset-btn">Reset</button>
+            <button class="export-btn">Export to Excel</button>
+        </section>
+
+        <!-- Action Buttons -->
+        <!-- <section class="actions">
+            <button class="approve-btn">Approve All</button>
+            <button class="reject-btn">Reject All</button>
+        </section> -->
+
+        <!-- Table Section -->
+        <table class="responsive-table">
+            <thead>
+                <tr>
+                    <th>S. No.</th>
+                    <th><input type="checkbox"></th>
+                    <th>TX User</th>
+                    <th>Action</th>
+                    <th>Amount</th>
+                    <th>TX Charge</th>
+                    <th>Payable Amount</th>
+                    <th>Account Details</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Placeholder rows -->
+                <tr>
+                    <td>1</td>
+                    <td><input type="checkbox"></td>
+                    <td>User1</td>
+                    <td>Approve/Reject</td>
+                    <td>$100</td>
+                    <td>$5</td>
+                    <td>$95</td>
+                    <td>Bank Details</td>
+                    <td>Pending</td>
+                    <td>2024-11-28</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="checkbox"></td>
+                    <td>User2</td>
+                    <td>Approve/Reject</td>
+                    <td>$200</td>
+                    <td>$10</td>
+                    <td>$190</td>
+                    <td>Bank Details</td>
+                    <td>Pending</td>
+                    <td>2024-11-29</td>
+                </tr>
+            </tbody>
+        </table>
+        <footer>
+            <p>Copyright © 2024 company name</p>
+        </footer>
+    </div>
+</body>
+
+</html>

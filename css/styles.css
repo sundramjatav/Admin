@@ -70,6 +70,14 @@ ol {
     box-shadow: 1px 0px 10px rgba(3, 3, 3, 0.296);
     padding: 10px;
 }
+.sidebar .side-inner .side-inner-in {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.sidebar .side-inner .side-inner-in::-webkit-scrollbar{
+    display: none;
+}
 
 .sidebar .side-inner .sidebarlinks {
     display: flex;
@@ -81,14 +89,14 @@ ol {
     display: flex;
     gap: 5px;
     align-items: center;
-    padding: 8px;
+    padding: 7px;
     cursor: pointer;
     border-radius: 5px;
     color: white;
 }
 
 .sidebar .side-inner .sidebarlinks .sidebar-btn i {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .sidebar .side-inner .sidebarlinks .sidebar-btn.active {
@@ -153,7 +161,7 @@ ol {
 
 #main-content {
     width: 100%;
-    height: fit-content;
+    min-height: 93%;
     padding: 10px;
     border-radius: 5px;
     background: white;
@@ -161,13 +169,11 @@ ol {
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.249);
 }
 
-.accordion{
+.accordion {
     width: 100%;
     display: flex;
     color: white;
-    padding: 8px;
     flex-direction: column;
-    /* border: 1px solid rgba(240, 241, 241, 0.808); */
     border-radius: 8px;
 }
 
@@ -178,8 +184,13 @@ ol {
     justify-content: space-between;
     align-items: center;
 }
+
 .accordion-body {
     display: none;
+}
+.accordion-body .sidebar-btn {
+    margin-bottom: 5px;
+    padding: 4px ;
 }
 
 .accordion-body.open {

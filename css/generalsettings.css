@@ -1,0 +1,123 @@
+.breadcrumb {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.breadcrumb h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.breadcrumb p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.breadcrumb a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-size: 14px;
+}
+
+thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px;
+}
+
+tbody td {
+    border-bottom: 1px solid #ddd;
+    padding: 7px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.edit-btn {
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #138496;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.214);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.214);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    .breadcrumb {
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+    .breadcrumb h1 {
+        font-size: 1.25rem;
+    }
+
+    .breadcrumb p {
+        font-size: 0.8rem;
+    }
+    .btn {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+}
+
+/* For screens smaller than 480px (Phones) */
+@media (max-width: 480px) {
+    .breadcrumb h1 {
+        font-size: 1.1rem;
+    }
+
+    .breadcrumb p {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}

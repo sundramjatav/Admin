@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="../../css/order.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <h1>Orders</h1>
+            <p><a href="#">home</a> / <a href="#">Order</a> / <span>All</span></p>
+        </div>
+
+        <!-- Heading -->
+        <h2 class="page-heading">ORDERS(3)</h2>
+
+        <!-- Filters -->
+        <div class="filters">
+            <input type="text" placeholder="Enter Order id" />
+            <input type="text" placeholder="Enter Username" />
+            <input type="date" />
+            <input type="date" />
+            <select>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+            </select>
+            <select>
+                <option value="">Select Payer</option>
+                <option value="payer1">Payer 1</option>
+                <option value="payer2">Payer 2</option>
+            </select>
+            <button class="btn filter">FILTER</button>
+            <button class="btn reset">RESET</button>
+        </div>
+
+        <!-- Total Order Amount -->
+        <div class="total-order">
+            Total Order Amount(300)
+        </div>
+        <!-- Table -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S. No.</th>
+                        <th>Action</th>
+                        <th>UserID(Name)</th>
+                        <th>Order ID</th>
+                        <th>Order Amount (BUSD)</th>
+                        <th>Payment Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample Rows -->
+                    <tr>
+                        <td>1</td>
+                        <td><button class="btn view">VIEW</button></td>
+                        <td>TS973204 (eracom tester)</td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>Success</td>
+                        <td>2023-03-02 13:17:37</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><button class="btn view">VIEW</button></td>
+                        <td>TS498103 (1r)</td>
+                        <td>2</td>
+                        <td>100</td>
+                        <td>Success</td>
+                        <td>2023-03-02 13:19:08</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><button class="btn print">PRINT BILL</button></td>
+                        <td>TS679382 (1l)</td>
+                        <td>3</td>
+                        <td>100</td>
+                        <td>Success</td>
+                        <td>2023-03-02 13:19:19</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <p>Copyright © 2024 company name</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+.breadcrumb {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.breadcrumb h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.breadcrumb p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.breadcrumb a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input, 
+.filters select, 
+.filters button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.filter-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.reset-btn {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.filters button:hover {
+  cursor: pointer;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.responsive-table th, 
+.responsive-table td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.responsive-table thead {
+  background-color: #f5f5f5;
+}
+
+.responsive-table tbody .no-data {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.214);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.214);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters input, 
+  .filters select, 
+  .filters button {
+    width: 100%;
+  }
+}

@@ -14,33 +14,169 @@
 <body>
     <div class="sidebar">
         <div class="side-inner">
-            <div class="header">
-                <img src="../assets/logo.png" alt="">
-            </div>
-            <div class="sidebarlinks">
-                <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/dashboard.html', this)">
-                    <i class="ri-home-4-fill"></i>
-                    <p>Dashboard</p>
+            <div class="side-inner-in">
+                <div class="header">
+                    <img src="../assets/logo.png" alt="">
                 </div>
-                <div class="accordion" id="customAccordion">
-                    <div class="accordion-header" onclick="toggleAccordion(this)">
-                        Users
-                        <span class="accordion-icon">▼</span>
+                <div class="sidebarlinks">
+                    <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/dashboard.html', this)">
+                        <i class="ri-home-4-fill"></i>
+                        <p>Dashboard</p>
                     </div>
-                    <div class="accordion-body">
-                        <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/page1.html', this)">
-                            <p>Page1</p>
+                    <div class="accordion" id="customAccordion">
+                        <div class="sidebar-btn accordion-header" onclick="toggleAccordion(this)">
+                            <div>
+                                <i class="ri-group-fill"></i>
+                                Users
+                            </div>
+                            <span class="accordion-icon"><i class="ri-arrow-down-s-line"></i></span>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="sidebar-btn"
+                                onclick="onSidebarLinkClick('components/pages/alluser.html', this)">
+                                <i class="ri-group-fill"></i>
+                                <p>All Users</p>
+                            </div>
+                            <div class="sidebar-btn"
+                                onclick="onSidebarLinkClick('components/pages/rewarduser.html', this)">
+                                <i class="ri-group-fill"></i>
+                                <p>User Reward</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/page1.html', this)">
-                    <p>Page1</p>
-                </div>
-                <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/page2.html', this)">
-                    <p>Page2</p>
-                </div>
-                <div class="sidebar-btn" onclick="onSidebarLinkClick('page3.html', this)">
-                    <p>Page3</p>
+                    <div class="accordion" id="customAccordion">
+                        <div class="sidebar-btn accordion-header" onclick="toggleAccordion(this)">
+                            <div>
+                                <i class="ri-organization-chart"></i>
+                                Network
+                            </div>
+                            <span class="accordion-icon"><i class="ri-arrow-down-s-line"></i></span>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="sidebar-btn"
+                                onclick="onSidebarLinkClick('components/pages/generationteam.html', this)">
+                                <p>Generation Team</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="customAccordion">
+                        <div class="sidebar-btn accordion-header" onclick="toggleAccordion(this)">
+                            <div>
+                                <i class="ri-money-dollar-box-fill"></i>
+                                Withdrawals
+                            </div>
+                            <span class="accordion-icon"><i class="ri-arrow-down-s-line"></i></span>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="sidebar-btn"
+                                onclick="onSidebarLinkClick('components/pages/pendingwithdrawal.html', this)">
+                                <p>Pending</p>
+                            </div>
+                            <div class="sidebar-btn"
+                                onclick="onSidebarLinkClick('components/pages/approvedwithdrawal.html', this)">
+                                <p>Approved</p>
+                            </div>
+                            <div class="sidebar-btn"
+                                onclick="onSidebarLinkClick('components/pages/cancelledwithdrawal.html', this)">
+                                <p>Cancelled</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/order.html', this)">
+                        <i class="ri-list-ordered"></i>
+                        <p>Order</p>
+                    </div>
+                    <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/income.html', this)">
+                        <i class="ri-money-rupee-circle-fill"></i>
+                        <p>Income</p>
+                    </div>
+                    <div class="accordion" id="customAccordion">
+                        <div class="sidebar-btn accordion-header" onclick="toggleAccordion(this)">
+                            Fund
+                            <span class="accordion-icon"><i class="ri-arrow-down-s-line"></i></span>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/api.html', this)">
+                                <p>API</p>
+                            </div>
+                            <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/addfund.html', this)">
+                                <p>Add Fund</p>
+                            </div>
+                            <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/fundtransferhistory.html', this)">
+                                <p>Transfer Fund History</p>
+                            </div>
+                            <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/pendingfund.html', this)">
+                                <p>Pending Fund History</p>
+                            </div>
+                            <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/approvedfund.html', this)">
+                                <p>Approved Fund History</p>
+                            </div>
+                            <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/cancelledfund.html', this)">
+                                <p>Cancelled Fund History</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="customAccordion">
+                        <div class="sidebar-btn accordion-header" onclick="toggleAccordion(this)">
+                            Support
+                            <span class="accordion-icon"><i class="ri-arrow-down-s-line"></i></span>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/pendingsupport.html', this)">
+                                <p>Pending</p>
+                            </div>
+                            <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/approvedsupport.html', this)">
+                                <p>Approved</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/contactpage.html', this)">
+                        <i class="ri-phone-fill"></i>
+                        <p>Contact</p>
+                    </div>
+                    <div class="accordion" id="customAccordion">
+                        <div class="sidebar-btn accordion-header" onclick="toggleAccordion(this)">
+                            <div>
+                                <i class="ri-settings-2-fill"></i>
+                                Settings
+                            </div>
+                            <span class="accordion-icon"><i class="ri-arrow-down-s-line"></i></span>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/generalsettings.html', this)">
+                                <i class="ri-settings-2-fill"></i>
+                                <p>General Settings</p>
+                            </div>
+                            <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/plansettings.html', this)">
+                                <p>Plan Settings</p>
+                            </div>
+                            <div class="accordion" id="customAccordion">
+                                <div class="sidebar-btn accordion-header" onclick="toggleAccordion(this)">
+                                    Page Setup
+                                    <span class="accordion-icon"><i class="ri-arrow-down-s-line"></i></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <div class="sidebar-btn"
+                                        onclick="onSidebarLinkClick('components/pages/page1.html', this)">
+                                        <p>Add Pages</p>
+                                    </div>
+                                    <div class="sidebar-btn"
+                                        onclick="onSidebarLinkClick('components/pages/page1.html', this)">
+                                        <p>Pages Setup Details</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/page1.html', this)">
+                                <p>New & Event</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-btn" onclick="onSidebarLinkClick('components/pages/changepassword.html', this)">
+                        <p>Change Password</p>
+                    </div>
+                    <div class="sidebar-btn" onclick="onSidebarLinkClick('page3.html', this)">
+                        <p>Logout</p>
+                    </div>
                 </div>
             </div>
         </div>

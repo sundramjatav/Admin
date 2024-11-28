@@ -1,0 +1,126 @@
+.breadcrumb {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.breadcrumb h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.breadcrumb p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.breadcrumb a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Page Heading */
+.page-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters input,
+.filters button {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.filters button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.filters button.export {
+    background-color: #28a745;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead th {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table tbody td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.214);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.214);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumb h1 {
+        font-size: 1.25rem;
+    }
+
+    .breadcrumb p {
+        font-size: 0.8rem;
+    }
+    .btn {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* For screens smaller than 480px (Phones) */
+@media (max-width: 480px) {
+    .breadcrumb h1 {
+        font-size: 1.1rem;
+    }
+
+    .breadcrumb p {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
