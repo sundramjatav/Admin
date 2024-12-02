@@ -175,6 +175,8 @@ footer {
     border-bottom: 1px solid rgba(0, 0, 0, 0.214);
 }
 
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .table-header h2 {
